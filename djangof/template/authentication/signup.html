@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ebiblio</title>
+</head>
+<body>
+    
+    <h1>sign up</h1>
+    <form action="/signup" method="post">
+        {% csrf_token %}
+        <label>Username</label>
+        <input type="text" name="username" id="username" placeholder="create a username" Required>
+        <br>
+        <br>
+        <label>full name</label>
+        <input type="text" name="fullname" id="fullname" placeholder="enter your name" Required>
+        <br>
+        <br>
+        <label>email</label>
+        <input type="email" name="email" id="email" placeholder="your email" Required>
+        <br>
+        <br>
+        <label>password</label>
+        <input type="password" id="password" name="password" placeholder="password" Required>
+        <br>
+        <br>
+        <label>confime password</label>
+        <input type="password" id="confirme" name="confirme" placeholder="confirme" Required> 
+        <br>
+        <br>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
